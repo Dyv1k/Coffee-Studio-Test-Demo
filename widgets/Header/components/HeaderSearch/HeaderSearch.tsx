@@ -59,6 +59,8 @@ const HeaderSearch: FC = () => {
         })
     }
 
+    const date = new Date()
+
     const setFields = () => {
         const currentFields = searchParams.filter((item) => item.tag === activeTag)
         if (currentFields[0].inputs) {
@@ -92,7 +94,7 @@ const HeaderSearch: FC = () => {
                                             onChange={(date) => field.onChange(date)}
                                             selected={field.value}
                                             locale={ru}
-                                            minDate={Date.now()}
+                                            minDate={date}
                                         />
                                     )}
                                 />
