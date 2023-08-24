@@ -1,0 +1,52 @@
+@import '@/styles/global/variables.scss';
+
+.hotels{
+    margin-top: 88px;
+    color: $color-secondary;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__slider{
+        margin-top: 40px;
+        &-slide{
+            &__item{
+                font-weight: 400;
+                img{
+                    border-radius: 16px;
+                }
+                &-wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &_rating{
+                        margin-top: 16px;
+                        font-size: 14px;
+                    }
+                    &_botton{
+                        margin-top: 24px;
+                        font-size: 20px;
+                        button{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                &__rating{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 2px;
+                }
+                h3{
+                    margin-top: 12px;
+                }
+                &__description{
+                    margin-top: 8px;
+                    color: $color-primary;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

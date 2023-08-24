@@ -1,0 +1,51 @@
+@import '@/styles/global/variables.scss';
+
+.input{
+    padding: 0;
+    display: block;
+    border: 1px solid $color-gray-active;
+    border-radius: 8px;
+    outline: none;
+    max-width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-secondary;
+    transition: $transition-input;
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    &::placeholder{
+        color: rgba(0, 61, 89, 0.48);
+    }
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__error{
+        display: block;
+        margin-top: 8px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: $color-error;
+    }
+
+    &_active{
+        color: $color-secondary;
+        &:active, &:focus{
+            color: $color-secondary;
+        }
+    }
+    &_disable{
+        color: $color-gray;
+        border-color: $color-gray;
+        pointer-events: none;
+    }
+    &_error{
+        border-color: $color-error;
+    }
+}

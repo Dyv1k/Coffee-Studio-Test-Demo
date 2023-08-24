@@ -1,0 +1,21 @@
+@import '@/styles/global/variables.scss';
+
+.navigation{
+    &-button{
+        padding: 0;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+        padding: 12px;
+        background: $color-gray;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-right: 16px;
+        &:last-child{
+            margin-right: 0;
+            img{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}

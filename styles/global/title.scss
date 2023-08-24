@@ -1,0 +1,87 @@
+@import './variables.scss';
+
+.title{
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+h1.title{
+    &_header{
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 64px;
+    }
+}
+
+h2.title{
+    &_cards{
+        font-size: 56px;
+        font-weight: 600;
+        line-height: 64px;
+    }
+    &_benefits{
+        font-size: 72px;
+        font-weight: 600;
+        line-height: 80px;
+    }
+    &_places, &_hotels, &_subscribe, &_tours{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+}
+
+h3.title{
+    &_benefits, &_places{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    &_hotels, &_tours{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
+
+h4.title{
+    &_footer{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+h5.title{
+    &_footer{
+        font-weight: 600;
+    }
+}
+
+// h1.title{
+//     font-size: $font-size-h2;
+//     font-weight: $font-weight-medium;
+// }
+
+// h2.title{
+//     font-size: $font-size-h2;
+//     font-weight: $font-weight-medium;
+// }
+
+// h3.title{
+//     font-size: $font-size-h3;
+//     font-weight: $font-weight-medium;
+// }
+
+// h4.title{
+//     font-size: $font-size-h4;
+//     font-weight: $font-weight-regular;
+// }

@@ -1,0 +1,88 @@
+@import './variables.scss';
+
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	width: inherit;
+	height: inherit;
+}
+
+p, ol > li{
+	margin: 0;
+}
+
+// table{
+// 	margin: 0;
+// 	padding: 0;
+// 	thead, tbody{
+// 		display: block;
+// 		padding: 0;
+// 	}
+// 	th, td, tr{
+// 		padding: 0;
+// 	}
+// }
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol{
+	margin: 0;
+	padding: 0 0 0 15px;
+	list-style-type: disc;
+}
+
+div[id="__next"] {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	// color: $color-black;
+}
+
+.content {
+	flex: 1 0 auto;
+	padding: 72px 0 88px 0;
+}
+
+footer{
+	flex: 0 0 auto;
+}
+
+.container{
+	width: 1600px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+.react-datepicker__input-container{
+	input{
+		border: 1px solid $color-gray-active;
+		border-radius: 8px;
+		outline: none;
+		max-width: 100%;
+		padding: 16px 20px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		color: $color-secondary;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+  

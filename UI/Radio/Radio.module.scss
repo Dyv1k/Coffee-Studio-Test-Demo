@@ -1,0 +1,28 @@
+@import '@/styles/global/variables.scss';
+
+.radio{
+    height: 24px;
+    width: 48px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.40);
+    border-radius: 24px;
+    transition: $transition-radio;
+    &_active{
+        background: $color-orange;
+        .radio{
+            &__circle{
+                left: 28px;
+            }
+        }
+    }
+    &__circle{
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        background: $color-white;
+        transition: $transition-radio;
+    }
+}

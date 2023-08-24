@@ -1,0 +1,64 @@
+@import '@/styles/global/variables.scss';
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    transition: $transition-button;
+    
+    &_small{
+        padding: 8px 12px;
+    }
+    &_medium{
+        padding: 12px 16px;
+    }
+    &_large{
+        padding: 16px 32px;
+    }
+
+    &_disable{
+        background: $color-disable;
+        color: $color-text-disable;
+        pointer-events: none;
+    }
+
+    &_active{
+        pointer-events: all;
+    }
+
+    &_orange{
+        background: $color-orange;
+        color: $color-white;
+        &:hover{
+            background: $color-orange-hover;
+        }
+        &:active{
+            background: $color-orange-active;
+        }
+    }
+    &_gray{
+        background: $color-gray;
+        color: $color-white;
+        &:hover{
+            background: $color-gray-hover;
+        }
+        &:active{
+            background: $color-gray-active;
+        }
+    }
+    &_white{
+        background: $color-button-white;
+        color: $color-white;
+        &:hover{
+            background: $color-button-white-hover;
+        }
+        &:active{
+            background: $color-button-white-active;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import '@/styles/global/variables.scss';
+
+.dropdown,
+.dropdown * {
+    z-index: 10;
+}
+
+.dropdown {
+    margin: 0 auto;
+    z-index: 10000;
+    width: 300px;
+    position: relative;
+    &_active{
+        .dropdown-content{
+            border: 1px solid $color-gray-active;
+            border-radius: 8px;
+            background: $color-white;
+        }
+    }
+    &-btn {
+        border: 1px solid $color-gray-active;
+        border-radius: 8px;
+        outline: none;
+        max-width: 100%;
+        padding: 16px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            transform: rotate(-90deg);
+        }
+    }
+    &-content {
+        position: absolute;
+        left: 0;
+        margin-top: 10px;
+        width: 100%;
+        max-height: 232px;
+        overflow-y: auto;
+        &__wrapper{
+            padding: 8px;
+        }
+        &__item {
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            &:hover {
+                background: $color-secondary;
+                color: $color-white;
+            }
+        }
+    }
+    button {
+        z-index: -1;
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+    &-content::-webkit-scrollbar {
+        width: 14px;
+        // border-radius: 24px;
+    }
+    &-content::-webkit-scrollbar-thumb{
+        border: 5px solid rgba(255, 255, 255, 0);
+        background-clip: padding-box;
+        border-radius: 9999px;
+        background-color: #AAAAAA;
+    }
+    &-content::-webkit-scrollbar-track {
+        border-radius: 24px;
+        background: $color-white;
+    }
+}

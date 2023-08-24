@@ -1,0 +1,47 @@
+@import '@/styles/global/variables.scss';
+
+.subscribe{
+    margin-top: 196px;
+    &__block{
+        background: rgba(111, 182, 207, 0.24);
+        border-radius: 24px;
+        padding: 72px 96px;
+        display: flex;
+        color: $color-secondary;
+        position: relative;
+        &__wrapper{
+            display: block;
+            max-width: 647px;
+        }
+        &__description{
+            margin-top: 16px;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-primary;
+        }
+        &__form{
+            margin-top: 32px;
+            display: flex;
+            align-items: flex-start;
+            button{
+                margin-left: 24px;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+        &__policy{
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 20px;
+            a{
+                color: $color-orange;
+                text-decoration: underline;
+            }
+        }
+        &__image{
+            position: absolute;
+            bottom: 72px;
+            right: 96px;
+        }
+    }
+}

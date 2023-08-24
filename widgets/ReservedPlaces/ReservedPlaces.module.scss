@@ -1,0 +1,101 @@
+@import '@/styles/global/variables.scss';
+
+.places{
+    margin-top: 88px;
+    color: $color-secondary;
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 920px;
+        margin-top: 16px;
+    }
+    &__slider{
+        margin-top: 56px;
+        &-slide{
+            width: auto !important;
+            &__wrapper{
+                width: fit-content;
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: repeat(2, 256px);
+                gap: 32px;
+            }
+            &-item{
+                position: relative;
+                border-radius: 16px;
+                overflow: hidden;
+                &:hover{
+                    .places__slider-slide-item__info{
+                        opacity: 1;
+                    }
+                }
+                &:nth-child(3n+1){
+                    grid-row: 1/3;
+                    grid-column: 1/2;
+                }
+                &:nth-child(3n+2){
+                    grid-row: 1;
+                    grid-column: 2/3;
+                    .places__slider-slide-item__info{
+                        &__wrapper{
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        &__button{
+                            margin-top: 32px;
+                        }
+                    }
+                }
+                &:nth-child(3n+3){
+                    grid-row: 2;
+                    grid-column: 2/3;
+                    .places__slider-slide-item__info{
+                        &__wrapper{
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                        &__button{
+                            margin-top: 32px;
+                        }
+                    }
+                }
+                &__info{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    background: linear-gradient(180deg, rgba(74, 83, 96, 0.00) 0%, rgba(74, 83, 96, 0.80) 76.33%);
+                    color: $color-white;
+                    opacity: 0;
+                    transition: $transition-reservedPlaces;
+                    &__wrapper{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 32px;
+                    }
+                    &__subtitle{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin-top: 4px;
+                    }
+                    &__button{
+                        line-height: 20px;
+                        p{
+                            margin-right: 4px;
+                        }
+                        img{
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
